@@ -1,3 +1,5 @@
+import logo from "../../images/Logo.png";
+
 import {
   Nav,
   Navcontainer,
@@ -7,26 +9,31 @@ import {
   Navlink,
   Navbtn,
   Navbtnlink,
+  Navibtn,
 } from "./navbar.styles";
 const Navbar = () => {
   return (
     <Nav>
       <Navcontainer>
-        <Navlogo to="/">Muzik</Navlogo>
+        <Navlogo to="/">
+          <img src={logo} alt="logo" />
+        </Navlogo>
         <Navmenu>
           <Navitems>
-            <Navlink>Speakers</Navlink>
+            <Navlink to="/">Speakers</Navlink>
           </Navitems>
           <Navitems>
-            <Navlink>Schedule</Navlink>
+            <Navlink to="/">Schedule</Navlink>
           </Navitems>
           <Navitems>
-            <Navlink>Contact Us</Navlink>
+            <Navlink to="/">Contact Us</Navlink>
           </Navitems>
+          <Navibtn>
+            <Navbtn>
+              <Navbtnlink to="/">Get Started</Navbtnlink>
+            </Navbtn>
+          </Navibtn>
         </Navmenu>
-        <Navbtn>
-          <Navbtnlink to="/">Login</Navbtnlink>
-        </Navbtn>
       </Navcontainer>
     </Nav>
   );
