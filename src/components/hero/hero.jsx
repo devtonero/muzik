@@ -1,4 +1,6 @@
 import Navbar from "../navbar/navbar";
+import Vector from "../../images/Vector.png";
+import timeming from "../../images/timeming.png";
 
 import {
   Herocontainer,
@@ -9,6 +11,9 @@ import {
   Imagebc,
   Imagebt,
   Imagebtn,
+  Img,
+  ImgT,
+  Imagetime,
 } from "./hero.styles";
 
 const Hero = () => {
@@ -25,8 +30,12 @@ const Hero = () => {
           </Imagep>
           <Imagebc>
             <Imagebt>Get Started</Imagebt>
-            <Imagebtn>Watch Video</Imagebtn>
+            <Imagebtn>
+              <Img src={Vector} alt="vector" />
+              <ImgT>Watch Video</ImgT>
+            </Imagebtn>
           </Imagebc>
+          <Imagetime src={timeming} alt="right" />
         </Imageitems>
       </Imagecontent>
     </Herocontainer>
